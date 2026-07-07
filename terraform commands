@@ -3,6 +3,7 @@ terraform validate
 terraform init
 terraform plan
 terraform apply
+terraform destroy
 terraform plane --auto-approve(without asking permission)
 terraform apply --auto-approve
 terraform validate(its check the syntax and error)
