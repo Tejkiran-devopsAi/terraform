@@ -1,0 +1,9 @@
+1 terraform init
+2 terraform plan
+3 terraform apply
+4 terraform destroy
+terraform plane --auto-approve(without asking permission)
+terraform apply --auto-approve
+terraform validate(its check the syntax and error)
+terraform tmt(its setup the hcl indendation and code smell)
+SIMPLY REMEMBER IPAD I=init P= plan A=apply D=destroy
