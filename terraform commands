@@ -5,5 +5,5 @@
 terraform plane --auto-approve(without asking permission)
 terraform apply --auto-approve
 terraform validate(its check the syntax and error)
-terraform tmt(its setup the hcl indendation and code smell)
+terraform fmt(its setup the hcl indendation and code smell)
 SIMPLY REMEMBER IPAD I=init P= plan A=apply D=destroy
