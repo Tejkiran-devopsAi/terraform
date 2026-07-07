@@ -17,3 +17,15 @@ Subcommands:
     new       Create a new workspace
     select    Select a workspace
     show      Show the name of the current workspace
+terraform state list(its list down the resources)
+#replace
+terraform apply -replace=<resource-name>
+terraform apply -replace='aws_instance.web["app"]'
+#replace=>its recreate the resource
+#taint
+terraform taint <resource-name>
+terraform untaint <resourcename>
+#both replace and taint are done by the same functionality but taint old command and replace is the new command
+ terraform apply -help(to get more commands with usage)
+# target
+terraform destroy -target=<resource>(its can be used to specific resource to be delete)
