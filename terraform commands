@@ -8,3 +8,11 @@ terraform apply --auto-approve
 terraform validate(its check the syntax and error)
 terraform fmt(its setup the hcl indendation and code smell)
 SIMPLY REMEMBER IPAD I=init P= plan A=apply D=destroy
+#workspaces 
+terraform workspace
+Subcommands:
+    delete    Delete a workspace
+    list      List Workspaces
+    new       Create a new workspace
+    select    Select a workspace
+    show      Show the name of the current workspace
