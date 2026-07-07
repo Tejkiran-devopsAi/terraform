@@ -29,3 +29,17 @@ terraform untaint <resourcename>
  terraform apply -help(to get more commands with usage)
 # target
 terraform destroy -target=<resource>(its can be used to specific resource to be delete)
+#First, get the EC2 instance ID (for example, i-0123456789abcdef0) from the AWS Console or CLI.
+when u delete unfortunatily congfiguration file
+Create a minimal configuration
+provider "aws" {
+  region = "us-east-1"
+}
+
+resource "aws_instance" "old" {
+  ami           = "ami-06067086cf86c58e6" # Placeholder
+  instance_type = "t3.micro"              # Placeholder
+}
+terraform init
+Then run:
+terraform import aws_instance.old i-0123456789abcdef0
